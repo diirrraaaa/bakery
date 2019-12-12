@@ -1,3 +1,25 @@
 #top img{
   margin-left: 583px;
+  /* padding-bottom: 15px; */
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1.5px solid rgb(113, 82, 48);
+
+}
+.logo{
+padding-bottom: 30px;
+}
+.nav{
+padding-bottom: 30px;
+}
+
+li {
+  float:left;
+   padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
