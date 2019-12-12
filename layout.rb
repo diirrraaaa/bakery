@@ -40,9 +40,9 @@ class Pastries
  end
  end
 
- apast = Pastry.new("Cinnamon Rolls", "3.50","Our Cinnamon Rolls are Sweet, Tender, and filled with Cinnamon Flavor for a plant-based spin on a Classic Favorite.")
- bpast = Pastry.new("Pumpkin Pastry", "3.50","Harry Potter inspired Pumpkin filled Vegan Pastry. ")
- cpast = Pastry.new("Blueberry Babka", "1.50","A soft and fluffy brioche-like Twist Bread with Blueberry Jam Coated in Cashew Coconut Glaze")
+ apast = Pastry.new("Cinnamon Rolls", "2.50","Our Cinnamon Rolls are Sweet, Tender, and filled with Cinnamon Flavor for a plant-based spin on a Classic Favorite.")
+ bpast = Pastry.new("Pumpkin Pastry", "2.50","Harry Potter inspired Pumpkin filled Vegan Pastry. ")
+ cpast = Pastry.new("Blueberry Babka", "2.50","A soft and fluffy brioche-like Twist Bread with Blueberry Jam Coated in Cashew Coconut Glaze")
 
 class Muffins
 
@@ -60,6 +60,6 @@ class Muffins
  end
  end
 
- amuff = Muffins.new("Cinnamon Rolls", "3.50","Our Cinnamon Rolls are Sweet, Tender, and filled with Cinnamon Flavor for a plant-based spin on a Classic Favorite.")
- bmuff = Muffins.new("Pumpkin Pastry", "3.50","Harry Potter inspired Pumpkin filled Vegan Pastry. ")
- cmuff = Muffins.new("Blueberry Babka", "1.50","A soft and fluffy brioche-like Twist Bread with Blueberry Jam Coated in Cashew Coconut Glaze")
+ amuff = Muffins.new("Chucky Monkey", "3.50","Warm, Satisfying, Fresh-Baked Ice Cream inspired Muffins.")
+ bmuff = Muffins.new("Cranbery Orange Muffins", "3.50","Sweet and Savory Fresh-Baked Muffins. ")
+ cmuff = Muffins.new("Pumpkin Spice Crumb Muffin", "3.50","Soft, Sweet, and incredibly moist Fresh-Baked Muffins.  ")
