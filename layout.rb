@@ -1,6 +1,10 @@
-
+require 'sinatra'
+require 'httparty'
+require 'JSON'
+require 'securerandom'
 class Cookies
 
+attr_reader :price, :name, :description
 def initialize( price, name, description)
 
 @cks_price = price
@@ -11,20 +15,20 @@ puts "Name of Cookie: #@cks_name"
 puts "Price of Cookie: #@cks_price"
 puts "\n"
 puts "Description: #@cks_description"
-
+puts "\n"
 
 puts ""
 
 end
 end
+Cookie =[acks, bcks, ccks, ecks, fcks]
+acks = Cookies.new("Whoopie Pie", "3.50","Our Whoopie Pies are made from two Fresh Baked Chocolaty Cookies filled with a Fluffy Vanilla Cashew Creme")
+bcks = Cookies.new("You have Oatmeal Creme Pie", "3.50","Our Oatmeal Creme Pies are a perfect blend of Oats and Cinnamon Baked and filled with our Fluffy Vanilla Cashew Creme")
+ccks = Cookies.new("Holly Macaroons!!", "1.50","Our Coconutty Aquafaba Macaroons are soft on the inside and hard on the outside drizzled with Vegan Dark Choclate")
+ecks = Cookies.new("Red-velvet Cream Cheese filled Cookie", "2.50","Rich and Famous Red-Velvet Cookie filled with Vegan Creme Cheese")
+fcks = Cookies.new("The ChocolateChipaholic Nutella filled Cookie", "2.50", "Super Sweet, Super Chocolaty Chip Cookie filled Creamy Vegan Chocolate Hazelnut spread")
 
-acks = Cookie.new("Whoopie Pie", "3.50","Our Whoopie Pies are made from two Fresh Baked Chocolaty Cookies filled with a Fluffy Vanilla Cashew Creme")
-bcks = Cookie.new("You have Oatmeal Creme Pie", "3.50","Our Oatmeal Creme Pies are a perfect blend of Oats and Cinnamon Baked and filled with our Fluffy Vanilla Cashew Creme")
-ccks = Cookie.new("Holly Macaroons!!", "1.50","Our Coconutty Aquafaba Macaroons are soft on the inside and hard on the outside drizzled with Vegan Dark Choclate")
-ecks = Cookie.new("Red-velvet Cream Cheese filled Cookie", "2.50","Rich and Famous Red-Velvet Cookie filled with Vegan Creme Cheese")
-fcks = Cookie.new("The ChocolateChipaholic Nutella filled Cookie", "2.50", "Super Sweet, Super Chocolaty Chip Cookie filled Creamy Vegan Chocolate Hazelnut spread")
-
-class Pastries
+class Pastry
 
   def initialize( price, name, description)
 
@@ -36,6 +40,7 @@ class Pastries
   puts "Price of Pastry: #@past_price"
   puts "\n"
   puts "Description: #@past_description"
+  puts "\n"
 
  end
  end
@@ -56,10 +61,11 @@ class Muffins
   puts "Price of Pastry: #@muff_price"
   puts "\n"
   puts "Description: #@muff_description"
+  puts "\n"
 
  end
  end
 
  amuff = Muffins.new("Chucky Monkey", "3.50","Warm, Satisfying, Fresh-Baked Ice Cream inspired Muffins.")
  bmuff = Muffins.new("Cranbery Orange Muffins", "3.50","Sweet and Savory Fresh-Baked Muffins. ")
- cmuff = Muffins.new("Pumpkin Spice Crumb Muffin", "3.50","Soft, Sweet, and incredibly moist Fresh-Baked Muffins.  ")
+ cmuff = Muffins.new("Pumpkin Spice Crumb Muffin", "3.50","Soft, Sweet, and incredibly moist Fresh-Baked Muffins.")
