@@ -1,5 +1,5 @@
 #top img{
-  margin-left: 583px;
+  margin-left: 0px;
   /* padding-bottom: 15px; */
 }
 ul {
@@ -7,19 +7,119 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border-bottom: 1.5px solid rgb(113, 82, 48);
+  /* border-bottom: 1.5px solid rgb(113, 82, 48); */
 
 }
-.logo{
-padding-bottom: 30px;
+li img{
+/* padding-bottom: 30px; */
+padding: 0;
 }
-.nav{
-padding-bottom: 30px;
+#nav{
+  position:relative;
+  margin-left: 90px;
+  background: white;
+  /* padding:5px; */
+  width: 80%;
 }
+#nav::after {
+  position:absolute;
+  bottom: -50px;
+  left: 0px;
+  width: 100%;
+  content:" ";
+  background:
+  radial-gradient(circle at 50% 0%, white 25%, #535353 26%, rgb(233, 83, 92) 40%);
+  background-color: rgb(233, 83, 92);
+  background-size:50px 100px;
+  height:50px;
+  background-repeat: repeat-x;
+}
+
 
 li {
   float:left;
-   padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+   /* padding-top: 20px; */
+  /* padding-left: 25px; */
+  /* padding-right: 25px; */
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body {
+  background: #1e2e36 none repeat scroll top left;
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: normal;
+}
+
+.ribbon-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: 5% auto;
+}
+
+h1.post-title {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.ribbon {
+  font-size: 20px!important;
+  text-transform: uppercase;
+  width: 100%;
+  position: relative;
+  background: #f35b5b;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 2em auto 2em;
+  margin-right: 55px;
+  margin-left: -35px;
+}
+
+.ribbon:after,
+.ribbon:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #d74545;
+  z-index: -1
+}
+
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent
+}
+
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent
+}
+
+.ribbon .ribbon-inner:after,
+.ribbon .ribbon-inner:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #b23232 transparent transparent;
+  bottom: -1em
+}
+
+.ribbon .ribbon-inner:before {
+  left: 0;
+  border-width: 1em 0 0 1em
+}
+
+.ribbon .ribbon-inner:after {
+  right: 0;
+  border-width: 1em 1em 0 0
+}
+body{
+  background-color: rgb(233, 83, 92);
 }

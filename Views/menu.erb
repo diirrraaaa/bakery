@@ -4,11 +4,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>Menu</h1>
-    <div class="Cookies" name="<%= Cookies.price %>">
+    <title>Creme pie</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Ladies Night.png" type="image/gif" sizes="16x16">
 
-  </body>
+    <div id="nav">
+      <ul>
+        <li><form action="/index.erb">
+          <input type="image" src="r.png" alt="Submit" width="75" height="75" style="padding-top:30px;">
+        </form></li>
+        <li><form action="/menu.erb">
+          <input type="image" src="r(3).png" alt="Submit" width="75" height="75"style="padding-top:30px;">
+        </form></li>
+        <li><form action="/orders.erb">
+          <input type="image" src="r(1).png" alt="Submit" width="75" height="75"style="padding-top:30px;">
+        </form></li>
+        <div class="logo">
+        <li><img src="Ladies Night.png" width="100px"; height="100px"></li>
+        </div>
+        <li><form action="/aboutus.erb">
+          <input type="image" src="r(4).png" alt="Submit" width="75" height="75">
+        </form></li>
+        <li><form action="/contact.erb">
+          <input type="image" src="r(5).png" alt="Submit" width="75" height="75">
+        </form></li>
+        <li><form action="/wine.erb">
+          <input type="image" src="r(2).png" alt="Submit" width="75" height="75">
+        </form></li>
+      </ul>
+    </div>
+<body>
+
+</body>
+
 </html>
+
+
+
+
+
+<% @@cookie.name do |cookie| %>
+    <h1>Menu</h1>
+
+<%= Cookie.name %>
+<% end %>
