@@ -1,17 +1,15 @@
 #top img{
   margin-left: 0px;
-  /* padding-bottom: 15px; */
 }
 ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   overflow: hidden;
-  /* border-bottom: 1.5px solid rgb(113, 82, 48); */
+  margin-left: 127px;
+  margin-bottom: -140;
 
 }
 li img{
-/* padding-bottom: 30px; */
 padding: 0;
 }
 #nav{
@@ -28,8 +26,8 @@ padding: 0;
   width: 100%;
   content:" ";
   background:
-  radial-gradient(circle at 50% 0%, white 25%, #535353 26%, rgb(233, 83, 92) 40%);
-  background-color: rgb(233, 83, 92);
+  radial-gradient(circle at 50% 0%, white 25%, #535353 26%, rgba(233, 83, 92, 0.3) 40%);
+  background-color: rgba(233, 83, 92, 0.3);
   background-size:50px 100px;
   height:50px;
   background-repeat: repeat-x;
@@ -38,11 +36,10 @@ padding: 0;
 
 li {
   float:left;
-   /* padding-top: 20px; */
-  /* padding-left: 25px; */
-  /* padding-right: 25px; */
+
 }
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 body {
   background: #1e2e36 none repeat scroll top left;
   color: #444;
@@ -66,6 +63,9 @@ h1.post-title {
 }
 
 .ribbon {
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: 10px;
+  padding: 0;
   font-size: 20px!important;
   text-transform: uppercase;
   width: 100%;
@@ -121,5 +121,54 @@ h1.post-title {
   border-width: 1em 1em 0 0
 }
 body{
-  background-color: rgb(233, 83, 92);
+  background-image: url(https://d1yn1kh78jj1rr.cloudfront.net/image/thumbnail/rDtN98Qoishumwih/mickeyredpaper-12-091815-707_thumb.jpg);
+}
+#grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* padding: 2px; */
+  background-color: rgba(233, 83, 92, 0.3);
+}
+.img1{
+    margin-left: 160px;
+}
+#Baked{
+  background-color: rgba(233, 83, 92, 0.76);
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+}
+.page{
+  background-color: rgba(233, 83, 92, 0.76);
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 2px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+h1{
+  background-color: rgba(233, 83, 92, 0.76);
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+}
+h2,h3{
+  color: rgba(233, 83, 92, 0.76);
+  background-color: #fff;
+}
+h5{
+  background-color: rgba(233, 83, 92, 0.76);
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-family:  'Open Sans', sans-serif;
+}
+.before{
+border-color: 3px solid #fff;
 }

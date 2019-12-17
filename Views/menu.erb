@@ -1,50 +1,97 @@
 
-
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Creme pie</title>
+    <title>Ladies Night</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="Ladies Night.png" type="image/gif" sizes="16x16">
-
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link rel="icon" href="Ladies Night.PNG" type="image/gif" sizes="16x16">
+    <!-- <div id="top"> -->
+    <!-- <img src="Creme Pie.PNG" width="100px"; height="100px"> -->
     <div id="nav">
       <ul>
-        <li><form action="/index.erb">
-          <input type="image" src="r.png" alt="Submit" width="75" height="75" style="padding-top:30px;">
+        <li><form action="index">
+          <input type="image" src="r.PNG" alt="Submit" width="100" height="100" style="padding-top:30px;">
         </form></li>
-        <li><form action="/menu.erb">
-          <input type="image" src="r(3).png" alt="Submit" width="75" height="75"style="padding-top:30px;">
+         <li><form action="menu">
+          <input type="image" src="r(3).PNG" alt="Submit" width="100" height="100"style="padding-top:30px;">
         </form></li>
-        <li><form action="/orders.erb">
-          <input type="image" src="r(1).png" alt="Submit" width="75" height="75"style="padding-top:30px;">
+         <li><form action="order">
+          <input type="image" src="r(1).PNG" alt="Submit" width="100" height="100"style="padding-top:30px;">
         </form></li>
         <div class="logo">
-        <li><img src="Ladies Night.png" width="100px"; height="100px"></li>
+        <li><img src="Lady Nights.PNG" width="200px" height="200px"></li>
         </div>
-        <li><form action="/aboutus.erb">
-          <input type="image" src="r(4).png" alt="Submit" width="75" height="75">
+        <li><form action="aboutus">
+          <input type="image" src="r(4).PNG" alt="Submit" width="100" height="100"style="padding-top:30px;">
         </form></li>
-        <li><form action="/contact.erb">
-          <input type="image" src="r(5).png" alt="Submit" width="75" height="75">
+        <li><form action="contact">
+          <input type="image" src="r(5).PNG" alt="Submit" width="100" height="100"style="padding-top:30px;">
         </form></li>
-        <li><form action="/wine.erb">
-          <input type="image" src="r(2).png" alt="Submit" width="75" height="75">
+        <li><form action="wine">
+          <input type="image" src="r(2).PNG" alt="Submit" width="100" height="100"style="padding-top:30px;">
         </form></li>
       </ul>
+      <!-- banners -->
+      <div class="ribbon-wrapper">
+  <h3 class="ribbon">
+
+<strong class="ribbon-inner">Ladies Night</strong>
+</h3>
+</div>
     </div>
 <body>
+  <div class="before">
+      <img src="spread.jpg" alt=""height="500" width="1200"style="margin-left: 35px;">
+  </div>
+  <div id="Baked">
+<div class="Cookie">
 
+<h1>Cookies</h1>
+<h2>Whoopie Pie</h2>
+<h4>3.50</h4>
+<h5>Our Whoopie Pies are made from two Fresh Baked Chocolaty Cookies filled with a Fluffy Vanilla Cashew Creme</h5>
+<h2>You have Oatmeal Creme Pie</h2>
+<h4>3.50</h4>
+<h5>Our Oatmeal Creme Pies are a perfect blend of Oats and Cinnamon Baked and filled with our Fluffy Vanilla Cashew Creme</h5>
+<h2>Holly Macaroons!!</h2>
+<h4>1.50</h4>
+<h5>Our Coconutty Aquafaba Macaroons are soft on the inside and hard on the outside drizzled with Vegan Dark Choclate</h5>
+<h2>Red-velvet Cream Cheese filled Cookie</h2>
+<h4>2.50</h4>
+<h5>Rich and Famous Red-Velvet Cookie filled with Vegan Creme Cheese</h5>
+<h2>The ChocolateChipaholic Nutella filled Cookie</h2>
+<h4>2.50</h4>
+<h5>Super Sweet, Super Chocolaty Chip Cookie filled Creamy Vegan Chocolate Hazelnut spread</h5>
+
+
+</div>
+<div class="Muffin">
+<h1> Muffins </h1>
+<h2>Chuncky Monkey</h2>
+<h4>3.50</h4>
+<h5>Satisfying, Fresh-Baked Ice Cream inspired Muffins.</h5>
+<h2>Cranbery Orange Muffins</h2>
+<h4>3.50</h4>
+<h5>Sweet and Savory Fresh-Baked Muffins.</h5>
+<h2>Pumpkin Spice Crumb Muffin</h2>
+<h4>3.50</h4>
+<h5>Soft, Sweet, and incredibly moist Fresh-Baked Muffins.</h5>
+
+</div>
+<div class="Pastry">
+<h1>Pastry</h1>
+<h2>Cinnamon Rolls</h2>,
+ <h4>2.50</h4>
+ <h5>Our Cinnamon Rolls are Sweet, Tender, and filled with Cinnamon Flavor for a plant-based spin on a Classic Favorite</h5>
+<h2>Pumpkin Pastry</h2>
+<h4>2.50</h4>
+<h5>Harry Potter inspired Pumpkin filled Vegan Pastry</h5>
+<h2>Blueberry Babka</h2>
+<h4>2.50</h4>
+<h5>A soft and fluffy brioche-like Twist Bread with Blueberry Jam Coated in Cashew Coconut Glaze</h5>
+</div>
+  </div>
 </body>
 
 </html>
-
-
-
-
-
-<% @@cookie.name do |cookie| %>
-    <h1>Menu</h1>
-
-<%= Cookie.name %>
-<% end %>

@@ -21,7 +21,7 @@ puts ""
 
 end
 end
-Cookie =[acks, bcks, ccks, ecks, fcks]
+
 acks = Cookies.new("Whoopie Pie", "3.50","Our Whoopie Pies are made from two Fresh Baked Chocolaty Cookies filled with a Fluffy Vanilla Cashew Creme")
 bcks = Cookies.new("You have Oatmeal Creme Pie", "3.50","Our Oatmeal Creme Pies are a perfect blend of Oats and Cinnamon Baked and filled with our Fluffy Vanilla Cashew Creme")
 ccks = Cookies.new("Holly Macaroons!!", "1.50","Our Coconutty Aquafaba Macaroons are soft on the inside and hard on the outside drizzled with Vegan Dark Choclate")
