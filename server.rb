@@ -1,9 +1,8 @@
 require 'sinatra'
 require 'httparty'
-require './quote.rb'
 require 'httparty'
-require 'wine_dot_com_api_request'
-require './layout.rb'
+require 'twilio-ruby'
+require './pastry.rb'
 
 get '/' do
   erb :index
@@ -36,11 +35,29 @@ end
 
 get'/contact'do
   erb :contact
+  
+end
+post '/contact' do
+    account_sid = ENV['TWILIO_ACCOUNT_SID']
+    auth_token = ENV['TWILIO_AUTH_TOKEN']
+    client = Twilio::REST::Client.new(account_sid, auth_token)
+
+    from = ENV['TWILIO_PHONE_NUM']
+    to = params['user_phone_num']
+
+    client.messages.create(
+    from: from,
+    to: to,
+    body: "Thank You for signing up! You will now recieve updates on Sales, Store Opennings, New Recipes, etc.! Text STOP to 45LADY")
+
+    session[:message] = "Successfully sent an SMS!"
+
+    erb contact
 end
 
 get '/wine'do
   erb :wine
 end
 get'/order'do
-  erb :order
+  erb :orders
 end
