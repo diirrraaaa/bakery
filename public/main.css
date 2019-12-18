@@ -125,12 +125,20 @@ body{
 }
 #grid-container{
   display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 80px;
+   grid-column-gap: 80px;
   grid-template-columns: auto auto auto;
   /* padding: 2px; */
   background-color: rgba(233, 83, 92, 0.3);
 }
-.img1{
-    margin-left: 160px;
+#grid-container2{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+
+  grid-template-columns: auto auto auto;
+  /* padding: 2px; */
+  background-color: rgba(233, 83, 92, 0.3);
 }
 #Baked{
   background-color: rgba(233, 83, 92, 0.76);
@@ -140,6 +148,13 @@ body{
   grid-gap: 5px;
   text-align: center;
   font-family: 'Bowlby One SC', cursive;
+}
+#grid-container3{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+ grid-row-gap: 80px;
+  /* padding: 2px; */
+  background-color: rgba(233, 83, 92, 0.3);
 }
 .page{
   background-color: rgba(233, 83, 92, 0.76);
